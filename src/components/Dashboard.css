@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Dashboard Container and Layout */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #ddd;
+}
+
+#dashboard-title {
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dashboard-nav .nav-link {
+  margin: 0 15px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.dashboard-nav .nav-link:hover {
+  color: #0056b3;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #e60000;
+  transform: scale(1.05);
+}
+
+/* Table Styling */
+.table-container {
+  margin-top: 40px;
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 16px;
+}
+
+.data-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.data-table tbody tr:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+/* Image Animations */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.dashboard-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  animation: swapImages 12s infinite ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for Image */
+@keyframes swapImages {
+  0% { opacity: 1; transform: scale(1); }
+  25% { opacity: 0.8; transform: scale(1.05); }
+  50% { opacity: 0.5; transform: scale(0.95); }
+  75% { opacity: 0.8; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Additional Animations */
+.slide-in { animation: slideIn 6s ease-in-out infinite; }
+.fade-in { animation: fadeIn 7s ease-in-out infinite; }
+.bounce-in { animation: bounceIn 6s ease-in-out infinite; }
+.rotate-in { animation: rotateIn 8s ease-in-out infinite; }
+.zoom-in { animation: zoomIn 9s ease-in-out infinite; }
+
+@keyframes slideIn {
+  0% { transform: translateX(-100%); opacity: 0; }
+  50% { transform: translateX(10%); opacity: 0.8; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0.4; }
+}
+
+@keyframes bounceIn {
+  0%, 100% { transform: translateY(0); }
+  25%, 75% { transform: translateY(-10px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes rotateIn {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes zoomIn {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}

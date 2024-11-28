@@ -1,0 +1,200 @@
+/* General User Management Layout */
+.user-management {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0f76eb;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Section */
+  #user-management-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff; 
+    padding: 15px;
+    color: white;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  #user-management-title {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  #navigation-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  #user-nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #user-nav-links li {
+    display: inline-block;
+  }
+  
+  #user-nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #user-nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  #logout-btn {
+    padding: 8px 16px;
+    background-color: #e74c3c; /* Red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  #logout-btn:hover {
+    background-color: #c0392b; /* Darker Red */
+  }
+  
+  /* Error Message */
+  #error-message {
+    color: #e74c3c; /* Red */
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Form Styles */
+  #user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .input-field:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  #submit-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* User Table Styles */
+  #user-table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  td {
+    color: #555;
+  }
+  
+  #user-table .action-btn {
+    padding: 6px 12px;
+    background-color: #3498db; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    justify-content: space-between;
+  }
+  
+  #user-table .action-btn:hover {
+    background-color: #2980b9; /* Darker Blue */
+  }
+  
+  #user-table .delete-btn {
+    background-color: #e74c3c; /* Red */
+  }
+  
+  #user-table .delete-btn:hover {
+    background-color: #c0392b; /* Darker Red */
+  }
+  
+  /* Media Query for Mobile Responsiveness */
+  @media (max-width: 768px) {
+    #user-management-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+    }
+  
+    #user-nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 15px;
+    }
+  
+    .input-field {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    #submit-btn {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    #user-table {
+      margin-top: 15px;
+    }
+  
+    th, td {
+      padding: 10px;
+    }
+  }
+  
